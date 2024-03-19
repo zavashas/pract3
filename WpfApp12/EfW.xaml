@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp12.EfW"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="Клииника" Height="450" Width="1000">
+    <Grid>
+        <DataGrid x:Name="ClinicViewGrd" AutoGenerateColumns="False" >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия пациента" Binding="{Binding Фамилия_пациента}" />
+                <DataGridTextColumn Header="Имя пациента" Binding="{Binding Имя_пациента}" />
+                <DataGridTextColumn Header="Отчество пациента" Binding="{Binding Отчество_пациента}" />
+                <DataGridTextColumn Header="Дата рождения пациента" Binding="{Binding Дата_рождения_пациента, StringFormat=\{0:dd.MM.yyyy\}}" />
+                <DataGridTextColumn Header="Пол пациента" Binding="{Binding Пол_пациента}" />
+                <DataGridTextColumn Header="Фамилия врача" Binding="{Binding Фамилия_врача}" />
+                <DataGridTextColumn Header="Имя врача" Binding="{Binding Имя_врача}" />
+                <DataGridTextColumn Header="Отчество врача" Binding="{Binding Отчество_врача}" />
+                <DataGridTextColumn Header="Специализация" Binding="{Binding Специализация}" />
+                <DataGridTextColumn Header="Дата приема" Binding="{Binding Дата_приема, StringFormat={}{0:dd.MM.yyyy HH:mm}}" />
+                <DataGridTextColumn Header="Описание приема" Binding="{Binding Описание_приема}"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>

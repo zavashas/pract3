@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище Clinic4ModelContainer" CdmEntityContainer="Clinic4Entities">
+    <EntitySetMapping Name="Appointments">
+      <EntityTypeMapping TypeName="Clinic4Model.Appointments">
+        <MappingFragment StoreEntitySet="Appointments">
+          <ScalarProperty Name="ID_Appointment" ColumnName="ID_Appointment" />
+          <ScalarProperty Name="Patient_ID" ColumnName="Patient_ID" />
+          <ScalarProperty Name="Doctor_ID" ColumnName="Doctor_ID" />
+          <ScalarProperty Name="DateAppointment" ColumnName="DateAppointment" />
+          <ScalarProperty Name="DescriptionAppointment" ColumnName="DescriptionAppointment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Doctors">
+      <EntityTypeMapping TypeName="Clinic4Model.Doctors">
+        <MappingFragment StoreEntitySet="Doctors">
+          <ScalarProperty Name="ID_Doctor" ColumnName="ID_Doctor" />
+          <ScalarProperty Name="DoctorSurname" ColumnName="DoctorSurname" />
+          <ScalarProperty Name="DoctorName" ColumnName="DoctorName" />
+          <ScalarProperty Name="DoctorMiddleName" ColumnName="DoctorMiddleName" />
+          <ScalarProperty Name="Specialization_ID" ColumnName="Specialization_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Gender">
+      <EntityTypeMapping TypeName="Clinic4Model.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="ID_Gender" ColumnName="ID_Gender" />
+          <ScalarProperty Name="GenderValue" ColumnName="GenderValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Patients">
+      <EntityTypeMapping TypeName="Clinic4Model.Patients">
+        <MappingFragment StoreEntitySet="Patients">
+          <ScalarProperty Name="ID_Patient" ColumnName="ID_Patient" />
+          <ScalarProperty Name="PatientSurname" ColumnName="PatientSurname" />
+          <ScalarProperty Name="PatientName" ColumnName="PatientName" />
+          <ScalarProperty Name="PatientMiddleName" ColumnName="PatientMiddleName" />
+          <ScalarProperty Name="Gender_ID" ColumnName="Gender_ID" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Specializations">
+      <EntityTypeMapping TypeName="Clinic4Model.Specializations">
+        <MappingFragment StoreEntitySet="Specializations">
+          <ScalarProperty Name="ID_Specialization" ColumnName="ID_Specialization" />
+          <ScalarProperty Name="SpecializationName" ColumnName="SpecializationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClinicView">
+      <EntityTypeMapping TypeName="Clinic4Model.ClinicView">
+        <MappingFragment StoreEntitySet="ClinicView">
+          <ScalarProperty Name="Фамилия_пациента" ColumnName="Фамилия пациента" />
+          <ScalarProperty Name="Имя_пациента" ColumnName="Имя пациента" />
+          <ScalarProperty Name="Отчество_пациента" ColumnName="Отчество пациента" />
+          <ScalarProperty Name="Пол_пациента" ColumnName="Пол пациента" />
+          <ScalarProperty Name="Дата_рождения_пациента" ColumnName="Дата рождения пациента" />
+          <ScalarProperty Name="Фамилия_врача" ColumnName="Фамилия врача" />
+          <ScalarProperty Name="Имя_врача" ColumnName="Имя врача" />
+          <ScalarProperty Name="Отчество_врача" ColumnName="Отчество врача" />
+          <ScalarProperty Name="Специализация" ColumnName="Специализация" />
+          <ScalarProperty Name="Дата_приема" ColumnName="Дата приема" />
+          <ScalarProperty Name="Описание_приема" ColumnName="Описание приема" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
